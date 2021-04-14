@@ -1,0 +1,37 @@
+
+body, html{
+	height: 100%;
+}
+ 
+.card{
+	margin-top: 20px;
+}
+
+.form-group small{
+	margin-top: 0px;
+}
+
+td.font-weight-normal{
+	font-weight: normal !important;
+}
+
+.forecast{
+	display: none;
+}
+
+.forecast .card-body{
+	background-color: #e4e6e8;
+}
+
+
+.table-responsive{
+	    display: table !important;
+}
+
+.forecast-icon{
+	padding: 0 !important;
+}
+
+.forecast-icon img{
+	height: 70px;
+}

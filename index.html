@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OnSign TV Temperature</title>
+
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="assets/libs/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">OnSign TV Temperature </a>  
+			</nav>
+		</header>
+
+		 <section id="content">
+	      	<div class="container">
+	      	  	<div class="row">
+	            	<div class="col-md-12">
+	                	<div class="card">
+						  	<div class="card-header">
+						    	Find Temperature For Location
+						  	</div>
+						  	<div class="card-body">
+						  		<form>
+								  	<div class="form-row">
+								    	<div class="col-md-12 mb-3">
+								      		<label for="location">Location</label>
+								      		<input type="text" 
+								      			class="form-control form-control-lg" 
+								      			id="location" 
+								      			placeholder="You can enter any type of content, such as name of the city zipcode." 
+								      			onfocus="this.placeholder = ''" 
+								      			onblur="this.placeholder = 'You can enter any type of content, such as name of the city zipcode.'"
+								      			placeholder-text="You can enter any type of content, such as name of the city zipcode."   required>
+								     
+								    	</div>	
+								  	</div>
+								  	<button type="button" class="btn btn-primary" id="show-temperature">Show Temperatura</button>
+								</form>
+						  </div>
+						</div>
+	            	</div>
+
+	            	<div class="col-md-12 forecast" >
+	                	<div class="card">
+						  	<div class="card-header">
+						    	Forecast For <i></i>
+						  	</div>
+						  	<div class="card-body">
+						  		<table class="table table-borderless table-responsive text-center">
+								  <thead>
+								  </thead>
+								  <tbody>
+								  </tbody>
+								</table>
+						  		
+						  </div>
+						</div>
+	            	</div>
+
+        		</div>
+	      	</div>
+    	</section>
+
+    	<script async defer src="https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyD6rKc6URJVJv5GNgNydJxd19jitau6pg0"></script>
+		<script type="text/javascript" src="assets/libs/jQuery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="assets/libs/Bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- SweetAlert is used here to show alerts more agreeable to users -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+		<script type="text/javascript" src="assets/js/operations.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/location.js"></script>
+		<script type="text/javascript" src="assets/js/openWeatherMap.js"></script>
+	</body>
+</html>
